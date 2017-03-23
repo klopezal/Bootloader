@@ -60,6 +60,9 @@ board_init(void)
 		      GPIO_MODE_INPUT,
 		      BOARD_FORCE_BL_PULL,
 		      BOARD_FORCE_BL_PIN);
+	/* Workaround to solve the pull-down issue on FMUv4pro */
+	gpio_set_mode(GPIOB, GPIO_MODE_INPUT, GPIO_CNF_INPUT_PULL_UPDOWN, GPIO6);
+	gpio_clear(GPIOB, GPIO6);
 #endif
 
 	/* enable the backup registers */

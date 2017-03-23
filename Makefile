@@ -48,7 +48,7 @@ TARGETS	= \
 	px4fmuv2_bl \
 	px4fmuv4_bl \
 	px4fmuv4pro_bl \
-	px4fmuv5_bl \
+#	px4fmuv5_bl \
 	px4io_bl \
 	px4iov3_bl \
 	tapv1_bl
